@@ -1,0 +1,22 @@
+<section class="dashboard">
+  <button *ngIf="mode === 'OFF'" (click)="start()">START</button>
+  <button *ngIf="mode === 'ON'" (click)="stop()">STOP</button>
+  <div class="level" [ngClass]="updateLevelUI">LEVEL: {{ stateService.getGameLevel() }}</div>
+  <div class="score">SCORE: {{ stateService.getScore() }}</div>
+  <div class="high-score">HIGH SCORE: {{ getHighScore() }}</div>
+</section>
+<div class="container">
+  <section class="field">
+    <ng-template missileHost></ng-template>
+    <h1 *ngIf="gameOver && mode === 'OFF'">Game Over</h1>
+    <div *ngIf="mode === 'OFF' && !gameOver" class="instructions">
+      <p>Press Arrow Left to move left</p>
+      <p>Press Arrow Right to move right</p>
+      <p>Press Space Bar to fire</p>
+      <button (click)="start()">START</button>
+    </div>
+  </section>
+  <section class="side-bar">
+    <app-sidebar></app-sidebar>
+  </section>
+</div>

@@ -1,0 +1,9 @@
+.hero {
+    height: 0;
+    width: 0;
+    position: absolute;
+    transition: 0.3s ease-in;
+    border-left: 20px solid #2f2f2b;
+    border-right: 20px solid #2f2f2b;
+    border-bottom: 30px solid green;
+}

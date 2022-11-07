@@ -1,0 +1,22 @@
+.power-bar {
+    height: 50px;
+    width: 25px;
+    border: 2px solid #2f2f2b;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 2px;
+    display: flex;
+
+    .bar {
+        height: 100%;
+        width: 100%;
+        background: #70dd88;
+        border-radius: 10px;
+        align-self: flex-end;
+        transition: 0.2s ease-in;
+   
+        &.enemy {
+            background: #c7662d; 
+        }
+    }
+}

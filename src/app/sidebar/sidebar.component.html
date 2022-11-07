@@ -1,0 +1,12 @@
+<div class="hero-power">
+    <p>Hero Power</p>
+    <div class="power-bar">
+        <div class="bar hero" [style.height.%]="heroPower"></div>
+    </div>
+</div>
+<div class="enemy-power">
+    <p>Enemy Power (Level {{stateService.getGameLevel()}})</p>
+    <div class="power-bar">
+        <div class="bar enemy" [style.height.%]="enemyPower"></div>
+    </div>
+</div>

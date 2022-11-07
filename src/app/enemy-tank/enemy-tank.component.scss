@@ -1,0 +1,10 @@
+.e-tank {
+    height: 0;
+    width: 30px;
+    background-color: rgb(238, 92, 92);
+    position: absolute;
+    border-right: 30px solid #2f2f2b;
+    border-left: 30px solid #2f2f2b;
+    border-top: 30px solid #ff4444;
+    transition: .3s ease;
+}

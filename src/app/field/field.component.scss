@@ -1,0 +1,85 @@
+.container {
+  width: 600px;
+  display: flex;
+  margin-left: 20px;
+
+  section.field {
+    background-color: #2f2f2b;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: #fff;
+      transform: translate(-50%, -50%);
+    }
+
+    .instructions {
+      position: absolute;
+      color: #fff;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        background-color: transparent;
+        padding: 5px 20px;
+        border-radius: 20px;
+        border-color: #fff;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  section.side-bar {
+    width: 100px;
+    margin: 0;
+    border: 1px solid #2f2f2b;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+}
+
+section.dashboard {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 578px;
+  padding: 10px;
+  align-items: center;
+  border: 1px solid #2f2f2b;
+  margin-left: 20px;
+
+  button {
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .level {
+    color: red;
+    font-weight: bold;
+  }
+
+  .blink-level-update {
+    animation: blinker 0.5s linear infinite;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
