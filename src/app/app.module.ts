@@ -8,6 +8,7 @@ import { MissileComponent } from './missile/missile.component';
 import { EnemyTankComponent } from './enemy-tank/enemy-tank.component';
 import { MissileDirective } from './missile/missile.directive';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MissileComponent,
     MissileDirective,
     EnemyTankComponent,
-    SidebarComponent
+    SidebarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
